@@ -26,11 +26,11 @@
         }
 
         function update_battery($id_battery, $capacidad){
-            this->$cap = $capacidad
+            $this->cap = $capacidad;
         
         $query_update_battery = "UPDATE tb_battery SET capacidad ? WHERE id_battery = $id_baterry";
         $query_update_battery_2 = $this->$conexion_bd->prepare($query_update_battery);
-        $array_query_battery = array ($this->$cap);
+        $array_query_battery = array ($this->cap);
         $result=$query_update_battery_2->execute($array_query_battery);
         return $result;
         
