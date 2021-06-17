@@ -20,7 +20,7 @@ $consulta_2 =$consulta->query_ram_mem();
     for($query=0; $query<sizeof($consulta);$query++){
         ?>
         <tr>
-        <td><?php echo $consulta [$query]["ram_capacity"]?></td>
+        <td><?php echo $consulta [$query]["capacidad1"]?></td>
         
         <td><a href=""></a></td>
         </tr>      
