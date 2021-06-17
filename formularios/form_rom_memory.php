@@ -16,10 +16,10 @@
                 <h1 class="alert-success text-center">Crear Memoria ROM</h1>
             </div>
             <div class="col-12">
-                <form action="rom_memory.php" method="POST">
+                <form action="../crear/rom_memory.php" method="POST">
                     <div class="form-group">
-                        <label for="color">Capacidad de la Memoria ROM</label>
-                        <input type="text" name="color" class="form-control" id="">                        
+                        <label for="capacidad1">Capacidad de la Memoria ROM</label>
+                        <input type="text" name="capacidad1" class="form-control" id="">                        
                     </div>                    
                     <button type="submit" class="btn btn-primary">Crear</button>
                 </form>
