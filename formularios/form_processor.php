@@ -16,15 +16,20 @@
                 <h1 class="alert-success text-center">Procesador</h1>
             </div>
             <div class="col-12">
-                <form action="processor.php" method="POST">
+                <form action="../crear/processor.php" method="POST">
                     <div class="form-group">
-                        <label for="color">Referencia del procesador</label>
+                        <label for="processor">Referencia del procesador</label>
                         <input type="text" name="processor" class="form-control" id="">                        
-                    </div>                    
+                    </div>
+                    <div class="form-group">
+                        <label for="description_pro">Description del procesador</label>
+                        <input type="text" name="description_pro" class="form-control" id="">                        
+                    </div>                     
                     <button type="submit" class="btn btn-primary">Crear</button>
                 </form>
             </div>
         </div>
+        <br>
         <a href='cruds.php' class='btn btn-info'>Home</a>
     </div>
 
