@@ -260,7 +260,7 @@
                         <a href="form_battery.php">Baterias</a>
                     </p>
                     <p>
-                        <a href="#!">Celulares</a>
+                        <a href="formularios/form_screen_size.php">Tamaño de Pantalla</a>
                     </p>
                     <p>
                         <a href="#!">Servicio Remoto</a>

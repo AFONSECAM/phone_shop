@@ -16,12 +16,30 @@
                 <h1 class="alert-success text-center">Crear tamaño de la pantalla</h1>
             </div>
             <div class="col-12">
-                <form action="operating_system.php" method="POST">
+                <form action="../crear/screen_size.php" method="POST">
                     <div class="form-group">
-                        <label for="color">Tamaño de la Pantalla</label>
+                        <label for="screen">Tamaño de la Pantalla</label>
                         <input type="text" name="screen" class="form-control" id="">                        
                     </div>                    
                     <button type="submit" class="btn btn-primary">Crear</button>
+                </form>
+            </div>
+        </div>
+        <a href='cruds.php' class='btn btn-info'>Home</a>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="alert-primary text-center">Consultar pantallas</h1>
+            </div>
+            <div class="col-12">
+                <form action="../consultas/query_screen_size.php" method="POST">
+                    <div class="form-group">
+                        <label for="screen">Tamaño de la Pantalla</label>
+                        <input type="text" name="q_screen" class="form-control" id="">                        
+                    </div>                    
+                    <button type="submit" class="btn btn-primary">Consultar</button>
                 </form>
             </div>
         </div>
