@@ -26,6 +26,7 @@
                         <input type="text" name="description_pro" class="form-control" id="">                        
                     </div>                     
                     <button type="submit" class="btn btn-primary">Crear</button>
+                    
                 </form>
             </div>
         </div>

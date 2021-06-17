@@ -1,6 +1,6 @@
 <?php
 
-require_once "includes/class_processor.php"
+require_once "includes/class_processor.php";
 $consulta = new processor();
 $consulta_2 =$consulta->query_processor();
 
