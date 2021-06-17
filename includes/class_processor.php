@@ -6,6 +6,7 @@ class processor extends Conection
 {
 
     private $processor;
+    private $description;
     private $conexion_bd;
 
     function __construct()
@@ -14,12 +15,14 @@ class processor extends Conection
         $this->conexion_bd = $this->conexion_bd->connect();
     }
 
-    function crear_processor($pro)
+    function crear_processor($pro, $desc)
     {
         $this->processor = $pro;
-        $query = "INSERT INTO tb_processor (processor_name) VALUES(?)";
+        $this->description =$desc;
+
+        $query = "INSERT INTO tb_processor (processor_name, description) VALUES(?,?)";
         $insert = $this->conexion_bd->prepare($query);
-        $data = array($pro);
+        $data = array($pro, $desc);
         $insert->execute($data);
     }
 
@@ -35,8 +38,7 @@ class processor extends Conection
     {
         $this->pro = $nombre_processor;
 
-
-        $query_update_processor = "UPDATE tb_processor SET processor_name ?  WHERE id_processor = $id_processor";
+        $query_update_processor = "UPDATE tb_processor SET processor_name ? description ? WHERE id_processor = $id_processor";
         $query_update_processor_2 = $this->$conexion_bd->prepare($query_update_processor);
         $array_query_processor = array($this->pro);
         $result = $query_update_processor_2->execute($array_query_processor);

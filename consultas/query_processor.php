@@ -21,6 +21,7 @@ $consulta_2 =$consulta->query_processor();
         ?>
         <tr>
         <td><?php echo $consulta [$query]["processor"]?></td>
+        <td><?php echo $consulta [$query]["description_pro"]?></td>
         
         <td><a href=""></a></td>
         </tr>      

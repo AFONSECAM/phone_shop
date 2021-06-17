@@ -12,13 +12,13 @@
 <body>
     <?php
         require_once "../includes/class_processor.php";
-        $ram = new processor();
+        $proce = new processor();
         if(empty($_POST['processor'])){
             echo "<div class='alert alert-danger'>Diligencie el campo processor nombre</div>
                     <a href='../formularios/form_processor.php' class='btn btn-info'>Intentar nuevamente</a>";
             return;
         }else{
-            $ram->crear_processor($_POST['processor']);
+            $proce->crear_processor($_POST['processor'],$_POST['description_pro']);
             echo "<div class='alert alert-success'>Se guardó correctamente!</div>
                     <a href='../formularios/form_processor.php' class='btn btn-info'>Crear nueva ram+</a>";
         }
