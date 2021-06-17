@@ -1,5 +1,5 @@
 <?php
-    include_once ("C:/xampp/htdocs/phone_store/includes/class_conection.php");
+    include_once ("class_conection.php");
 
     class Battery extends Conection{
         public $capacidad;

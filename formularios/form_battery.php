@@ -16,7 +16,7 @@
                 <h1 class="alert-success text-center">Crear baterias</h1>
             </div>
             <div class="col-12">
-                <form action="battery.php" method="POST">
+                <form action="../tables/battery.php" method="POST">
                     <div class="form-group">
                         <label for="capacidad">Capacidad de la batería</label>
                         <input type="text" name="capacidad" class="form-control" id="">

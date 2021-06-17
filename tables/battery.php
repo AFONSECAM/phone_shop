@@ -11,7 +11,7 @@
 
 <body>
     <?php
-        require_once "C:/xampp/htdocs/phone_store/includes/class_battery.php";
+        require_once "../includes/class_battery.php";
         $battery = new Battery();
         if(empty($_POST['capacidad'])){
             echo "<div class='alert alert-danger'>Diligencie el campo capacidad</div>
