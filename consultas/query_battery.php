@@ -2,7 +2,7 @@
 
 require_once "includes/class_battery.php"
 $consulta = new Battery();
-$consulta_2 =$consulta->query_batery();
+$consulta_2 =$consulta->query_batery()
 
 ?>
 
