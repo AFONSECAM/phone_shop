@@ -15,7 +15,7 @@
             <div class="col-12">
                 <h1 class="alert-success text-center">Crear baterias</h1>
             </div>
-            <div class="col-12">
+            <div class="col-4">
                 <form action="../crear/battery.php" method="POST">
                     <div class="form-group">
                         <label for="capacidad">Capacidad de la batería</label>
@@ -23,10 +23,10 @@
                         <small id="" class="form-text text-muted">La capacidad se mide en mAh.</small>
                     </div>                    
                     <button type="submit" class="btn btn-primary">Crear</button>
+                    <a href='cruds.php' class="btn btn-info float-right">Home</a>
                 </form>
             </div>
         </div>
-        <a href='cruds.php' class='btn btn-info'>Home</a>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
